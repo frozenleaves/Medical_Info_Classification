@@ -1,25 +1,14 @@
-# 多模态医学图像分类系统
+# 多模态医学信息分类系统
 
-一个基于深度学习的多模态医学图像分类系统，能够同时处理病历文本、口腔照片和病理切片数据，为医学诊断提供智能化支持。
+基于深度学习的多模态医学信息分类系统，能够同时处理病历文本、照片和病理切片数据，为医学诊断提供智能化支持。
 
 ## 🌟 系统特点
 
 ### 📋 多模态数据支持
 - **文本模态**: 使用Qwen3-embedding模型处理病历文本
 - **图像模态**: 采用ViT+多图片注意力机制处理口腔照片
-- **病理模态**: 基于MIL(多实例学习)方法处理WSI病理切片
+- **病理切片数据模态**: 基于MIL(多实例学习)方法处理WSI病理切片
 
-### 🏗️ 先进架构设计
-- **特征提取**: 三种专门的编码器分别处理不同模态数据
-- **融合机制**: Transformer-based跨模态注意力融合
-- **分类器**: 支持多种分类策略和不确定性估计
-- **损失函数**: 多任务学习结合辅助损失和对比学习
-
-### 💡 智能特性
-- **注意力机制**: 自动学习不同模态和图片的重要性权重
-- **模态自适应**: 支持缺失模态的情况，动态调整权重
-- **可解释性**: 提供注意力可视化和特征重要性分析
-- **鲁棒性**: 数据增强、模态dropout等提高模型泛化能力
 
 ## 📁 项目结构
 
@@ -73,21 +62,10 @@ Medical_Image_Classification/
 
 ### 环境安装
 
-#### 方式1: 直接安装依赖
 ```bash
 # 克隆项目
-git clone https://github.com/your-org/medical-image-classification.git
-cd medical-image-classification
-
-# 安装依赖
-pip install -r requirements.txt
-```
-
-#### 方式2: 安装为包 (推荐)
-```bash
-# 克隆项目
-git clone https://github.com/your-org/medical-image-classification.git
-cd medical-image-classification
+git clone https://github.com/frozenleaves/Medical_Info_Classification.git
+cd Medical_Info_Classification
 
 # 开发模式安装
 pip install -e .
@@ -96,11 +74,6 @@ pip install -e .
 pip install .
 ```
 
-#### 方式3: 从源码安装
-```bash
-# 直接从GitHub安装
-pip install git+https://github.com/your-org/medical-image-classification.git
-```
 
 ### 数据准备
 
@@ -232,29 +205,8 @@ samples = [
 results = inferencer.predict_batch(samples)
 ```
 
-## 💻 开发指南
 
-### 开发环境设置
-
-```bash
-# 克隆项目
-git clone https://github.com/your-org/medical-image-classification.git
-cd medical-image-classification
-
-# 创建虚拟环境
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# 开发模式安装
-pip install -e ".[dev]"
-
-# 安装pre-commit钩子
-pre-commit install
-```
-
-### 代码风格
-
-项目使用以下工具维护代码质量：
+### 代码格式
 
 - **Black**: 代码格式化
 - **Flake8**: 代码风格检查
@@ -373,6 +325,8 @@ training_config = {
 - **类别平衡**: 平衡准确率、Cohen's Kappa
 
 ## 🔧 高级功能
+
+<!--
 
 ### 1. 模型集成
 
@@ -546,4 +500,4 @@ loss_config = {
 
 ---
 
-⭐ 如果这个项目对您有帮助，请给我们一个星标！
+-->

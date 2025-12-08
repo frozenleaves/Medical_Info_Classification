@@ -13,8 +13,8 @@ from .src.data.dataset import MultiModalMedicalDataset
 from .src.data.dataloader import create_dataloaders
 
 __all__ = [
-    'create_multimodal_model',
-    'MultiModalTrainer', 
-    'MultiModalMedicalDataset',
-    'create_dataloaders'
+    "create_multimodal_model",
+    "MultiModalTrainer",
+    "MultiModalMedicalDataset",
+    "create_dataloaders",
 ]
