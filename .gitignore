@@ -156,7 +156,6 @@ wandb/
 logs/
 data/
 datasets/
-A_Datasets/
 
 # 临时文件
 *.tmp
