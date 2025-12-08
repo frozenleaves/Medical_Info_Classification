@@ -1,11 +1,9 @@
 # 快速开始指南
 
-## 🚀 5分钟快速上手
-
 ### 1. 环境准备
 ```bash
 # 克隆或下载项目
-cd Medical_Image_Classification
+cd Medical_Info_Classification
 
 # 安装依赖
 pip install -r requirements.txt
@@ -56,7 +54,7 @@ mic-train --data_dir your_data --experiment_name my_experiment
 # 单样本推理
 python inference.py \
   --model_path experiments/my_experiment/checkpoints/best_model.pth \
-  --text "患者口腔症状描述" \
+  --text "患者症状描述" \
   --images photo1.png photo2.png \
   --pathology slide1.tiff
 
@@ -81,12 +79,6 @@ trainer = MultiModalTrainer(model_config, training_config)
 
 ## 🛠️ 常见问题
 
-**Q: 显存不足？**
-```bash
-# 减少批次大小
-python main.py --batch_size 2 --accumulation_steps 8
-```
-
 **Q: 缺少某些模态数据？**
 - 系统自动处理缺失模态，无需特殊配置
 
@@ -106,4 +98,4 @@ python inference.py --model_path model.pth --visualize
 - 示例数据：查看 `A_Datasets/`（如果存在）
 
 ---
-✨ 祝您使用愉快！如有问题请创建Issue。
+
