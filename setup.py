@@ -21,14 +21,14 @@ if requirements_file.exists():
         ]
 
 setup(
-    name="medical-image-classification",
+    name="medical-info-classification",
     version="1.0.0",
-    author="Medical AI Team",
-    author_email="contact@medical-ai.com",
-    description="多模态医学图像分类系统",
+    author="frozenleaves",
+    author_email="example@example.com",
+    description="多模态医学信息分类",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/your-org/medical-image-classification",
+    url="https://github.com/frozenleaves/Medical_Info_Classification",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -37,14 +37,13 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
         "Topic :: Scientific/Engineering :: Medical Science Apps.",
     ],
-    python_requires=">=3.8",
+    python_requires=">=3.9",
     install_requires=requirements,
     extras_require={
         "dev": ["pytest", "black", "flake8"],
