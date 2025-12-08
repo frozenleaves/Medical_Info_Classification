@@ -1,0 +1,51 @@
+# 深度学习框架
+torch>=2.7.1
+torchvision>=0.22.1
+torchaudio>=2.7.1
+
+# 预训练模型和NLP
+transformers>=4.57.1
+tokenizers>=0.22.0
+
+# 计算机视觉
+timm>=0.9.0
+opencv-python>=4.8.0
+Pillow>=9.0.0
+
+# 数据增强
+albumentations>=1.3.0
+
+# 科学计算
+numpy==1.26.4
+pandas>=2.0.0
+scikit-learn>=1.3.0
+scipy>=1.10.0
+
+# 可视化
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# 实验记录（可选）
+wandb>=0.15.0
+
+
+# 配置管理
+omegaconf>=2.3.0
+
+# 图像处理
+imageio>=2.28.0
+scikit-image>=0.20.0
+
+# WSI/SVS 病理图像处理
+openslide-python>=1.2.0
+
+# 开发工具
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0
+
+# 其他依赖
+pathlib2>=2.3.7
+typing-extensions>=4.5.0
+einops>=0.6.0
+tqdm>=4.65.0

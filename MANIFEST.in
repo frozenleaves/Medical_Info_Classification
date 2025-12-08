@@ -1,0 +1,9 @@
+# 包含非Python文件
+include README.md
+include requirements.txt
+include LICENSE
+recursive-include MIC/src *.py
+recursive-include MIC/src *.json
+recursive-exclude MIC/src *.pyc
+recursive-exclude MIC/src __pycache__
+global-exclude *.DS_Store
