@@ -154,8 +154,6 @@ wandb/
 *.ckpt
 *.weights
 logs/
-data/
-datasets/
 
 # 临时文件
 *.tmp
