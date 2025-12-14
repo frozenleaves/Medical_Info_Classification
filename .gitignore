@@ -154,6 +154,9 @@ wandb/
 *.ckpt
 *.weights
 logs/
+patch_outputs/
+sub-dataset/
+Medical-Dialogue-Dataset-Chinese/
 
 # 临时文件
 *.tmp

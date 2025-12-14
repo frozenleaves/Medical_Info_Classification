@@ -38,6 +38,7 @@ scikit-image>=0.20.0
 
 # WSI/SVS 病理图像处理
 openslide-python>=1.2.0
+openslide-bin
 
 # 开发工具
 pytest>=7.0.0

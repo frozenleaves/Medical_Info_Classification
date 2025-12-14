@@ -1,6 +1,5 @@
 """
 训练器模块
-实现多模态医学图像分类模型的训练流程
 """
 
 import torch
@@ -24,7 +23,7 @@ from ..models.multimodal_model import create_multimodal_model
 
 class MultiModalTrainer:
     """
-    多模态医学图像分类训练器
+    多模态医学信息分类训练器
     """
 
     def __init__(
